@@ -100,7 +100,7 @@ function Header() {
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand`}
-              aria-labelledb
+              aria-labelledby
               y={`offcanvasNavbarLabel-expand`}
               placement="end"
             >
