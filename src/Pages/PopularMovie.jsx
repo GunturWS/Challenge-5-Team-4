@@ -128,6 +128,8 @@ function PopularMovie() {
           className="owl-theme"
           // navContainerClass={styles["owl-nav"]}
           // navClass={styles[["owl-prev", "owl-next"]]}
+          // navContainerClass={styles["owl-nav"]}
+          // navClass={styles[["owl-prev", "owl-next"]]}
           {...options}
         >
           {popularMovies.map((movie) => (
