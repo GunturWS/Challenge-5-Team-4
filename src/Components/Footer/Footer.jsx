@@ -13,14 +13,11 @@ function Footer() {
         const token = localStorage.getItem("token");
         if (!token) return;
 
-        const response = await axios.get(
-          `${import.meta.env.VITE_API_AUTH_URL}/api/v1/auth/me`,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
+        const response = await axios.get(`${import.meta.env.VITE_API_AUTH_URL}/api/v1/auth/me`, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
 
         const { data } = response.data;
 
@@ -54,58 +51,58 @@ function Footer() {
             <Row className="m-4 p-4 d-flex justify-content-center align-items-start">
               <Col xs={12} md={3}>
                 <Link style={{ fontSize: "26px", marginRight: "30px" }}>
-                  <BsFacebook color="gray" />
+                  <BsFacebook color="black" />
                 </Link>
                 <Link style={{ fontSize: "26px", marginRight: "30px" }}>
-                  <BsInstagram color="gray" />
+                  <BsInstagram color="black" />
                 </Link>
                 <Link style={{ fontSize: "26px" }}>
-                  <BsTwitter color="gray" />
+                  <BsTwitter color="black" />
                 </Link>
-                <Link style={{ textDecoration: "none", color: "gray" }}>
+                <Link style={{ textDecoration: "none", color: "black" }}>
                   <p>Audio Description</p>
                 </Link>
-                <Link style={{ textDecoration: "none", color: "gray" }}>
+                <Link style={{ textDecoration: "none", color: "black" }}>
                   <p>Investor Relations</p>
                 </Link>
-                <Link style={{ textDecoration: "none", color: "gray" }}>
+                <Link style={{ textDecoration: "none", color: "black" }}>
                   <p>Illegal Information</p>
                 </Link>
-                <Link style={{ textDecoration: "none", color: "gray" }}>
+                <Link style={{ textDecoration: "none", color: "black" }}>
                   <p>Service Code</p>
                 </Link>
               </Col>
               <Col xs={12} md={3}>
-                <Link style={{ textDecoration: "none", color: "gray" }}>
+                <Link style={{ textDecoration: "none", color: "black" }}>
                   <p>Help Center</p>
                 </Link>
-                <Link style={{ textDecoration: "none", color: "gray" }}>
+                <Link style={{ textDecoration: "none", color: "black" }}>
                   <p>Job Vacancy</p>
                 </Link>
-                <Link style={{ textDecoration: "none", color: "gray" }}>
+                <Link style={{ textDecoration: "none", color: "black" }}>
                   <p>Cookie Preferences</p>
                 </Link>
               </Col>
               <Col xs={12} md={3}>
-                <Link style={{ textDecoration: "none", color: "gray" }}>
+                <Link style={{ textDecoration: "none", color: "black" }}>
                   <p>Gift Card</p>
                 </Link>
-                <Link style={{ textDecoration: "none", color: "gray" }}>
+                <Link style={{ textDecoration: "none", color: "black" }}>
                   <p>Terms of Use</p>
                 </Link>
-                <Link style={{ textDecoration: "none", color: "gray" }}>
+                <Link style={{ textDecoration: "none", color: "black" }}>
                   <p>Company Information</p>
                 </Link>
               </Col>
               <Col xs={12} md={3}>
                 <p
                   style={{
-                    color: "gray",
+                    color: "black",
                     fontSize: "12px",
                     textAlign: "end",
                   }}
                 >
-                  @ Copyrigth by Ariantika X Team 4 2023
+                  @ Copyrigth by Team 4 2023
                 </p>
               </Col>
             </Row>
